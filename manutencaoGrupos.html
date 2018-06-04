@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Grupos</title>
+        <link rel="stylesheet" type="text/css" href="js/datatables.min.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>-->
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+        <link rel="stylesheet" type="text/css" href="css/manutencaoGrupos.css"/>
+        <script src="jquery/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/datatables.min.js"></script>
+    </head>
+    <body>
+        <h1>Manutenção do Grupo</h1>
+        <span>Nome do Grupo: </span>
+        <input type="text" id="txtNomeGrupo">
+        <span id="lblNomeGrupo"></span>
+
+        <span id="lblData">Data de Atualização: </span>
+        <input type="text" id="txtDataGrupo">
+        <span id="lblDataGrupo"></span>
+
+        <input type="button" value="Cadastrar Grupo" id="btnAcaoGrupo" />
+
+        <br><br>
+        <fieldset id="fldIncluir">
+            <legend>Incluir Pessoa</legend>
+            <select id="ddlPessoas">
+                <option value="-1">-- Selecione --</option>
+            </select>
+            <span id="lblIdade" class="invisivel">Idade: X</span>
+            <input type="button" value="Incluir Pessoa" onclick="" id="btnIncluirPessoa"/>
+        </fieldset>
+        <br />
+        <fieldset id="fldPessoasGrupo">
+            <legend>Pessoas do Grupo</legend>
+            <table id="tabGrupoPessoas">
+                <thead>
+                    <tr>
+                        <th class="colCheckbox"></th>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyGrupoPessoas"></tbody>
+            </table>
+            <br>
+            <input type="button" id="btnExcluir" value="Excluir Pessoa" />
+        </fieldset>
+        <script src="js/util.js"></script>
+        <script src="js/listar.js"></script>
+        <script src="js/deletar.js"></script>
+        <script src="js/manutencaoGrupos.js"></script>
+    </body>
+</html>

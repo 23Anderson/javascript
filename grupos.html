@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Grupos</title>
+        <link rel="stylesheet" type="text/css" href="js/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+        <link rel="stylesheet" type="text/css" href="css/grupos.css"/>
+        <script src="jquery/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/datatables.min.js"></script>
+    </head>
+    <body>
+        <h1>Tela Inicial</h1>
+        <input type="button" value="Novo Grupo" onclick="gruposJs.OnNovoGrupoClick();"/>
+        <br><br>
+        <table id="tabGrupos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Data Atualização</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyGrupos"></tbody>
+        </table>
+        <script src="js/util.js"></script>
+        <script src="js/listar.js"></script>
+        <script src="js/deletar.js"></script>
+        <script src="js/grupos.js"></script>
+    </body>
+</html>

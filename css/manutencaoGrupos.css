@@ -1,0 +1,11 @@
+#lblData, #lblIdade {
+    margin-left: 7%;
+}
+
+#btnAcaoGrupo, #btnIncluirPessoa, #btnExcluir{
+    float: right;
+}
+
+.invisivel {
+    display: none;
+}
