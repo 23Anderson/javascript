@@ -8,20 +8,28 @@
         <script type="text/javascript" src="js/datatables.min.js"></script>
     </head>
     <body>
-        <h1>Tela Inicial</h1>
-        <input type="button" value="Novo Grupo" onclick="gruposJs.OnNovoGrupoClick();"/>
-        <br><br>
-        <table id="tabGrupos">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Data Atualização</th>
-                    <th>Deletar</th>
-                </tr>
-            </thead>
-            <tbody id="tbodyGrupos"></tbody>
-        </table>
+        <main>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="grupos.html">Grupos</a></li>
+                </ul>
+            </nav>
+            <h1>Grupos</h1>
+            <input type="button" value="Novo Grupo" onclick="gruposJs.OnNovoGrupoClick();" id="btnNovoGrupo"/>
+            <br><br>
+            <table id="tabGrupos">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Data Atualização</th>
+                        <th>Deletar</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyGrupos"></tbody>
+            </table>
+        </main>
         <script src="js/util.js"></script>
         <script src="js/listar.js"></script>
         <script src="js/deletar.js"></script>
